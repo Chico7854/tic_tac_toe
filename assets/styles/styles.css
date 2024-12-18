@@ -7,7 +7,7 @@ body {
     align-items: center;
 }
 
-main {
+#board {
     height: 500px;
     width: 500px;
 
