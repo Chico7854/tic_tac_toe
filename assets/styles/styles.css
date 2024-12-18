@@ -1,1 +1,31 @@
 @import url('reset.css');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 500px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    height: 160px;
+    width: 160px;
+}
+
+.wall {
+    background-color: black;
+
+    flex: 1;
+}
