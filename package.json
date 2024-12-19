@@ -1,0 +1,18 @@
+{
+  "name": "tic_tac_toe",
+  "version": "1.0.0",
+  "description": "Project to simulate a tic tac toe game locally for now, and online in the future",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
