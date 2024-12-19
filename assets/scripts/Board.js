@@ -30,8 +30,8 @@ export class Board {
             const target = event.target;
             if (target.classList.contains('square')) {
                 const coordinates = JSON.parse(target.dataset.coordinates);
-                this.updateBoardData(coordinates, 1);
-                this.updateBoardUI(target);
+                this.updateBoardData(coordinates, window.playerTurn);
+                this.updateBoardUI(target, window.playerTurn);
                 console.log(this.board);
             } else {
                 event.stopPropagation();
@@ -45,7 +45,11 @@ export class Board {
         this.board[row][column] = player;
     }
 
-    updateBoardUI(squareElement) {
-        squareElement.style.backgroundColor = 'red';
+    updateBoardUI(squareElement, player) {
+        if (player === 1) {
+            squareElement.style.backgroundColor = 'red';
+        } else {
+            squareElement.style.backgroundColor = 'blue';
+        }
     }
 }
