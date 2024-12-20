@@ -11,6 +11,7 @@ class Game {
             } else {
                 window.playerTurn = 1;
             }
+            console.log("Ho");
         })
     }
 }

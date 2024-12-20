@@ -32,7 +32,6 @@ export class Board {
                 const coordinates = JSON.parse(target.dataset.coordinates);
                 this.updateBoardData(coordinates, window.playerTurn);
                 this.updateBoardUI(target, window.playerTurn);
-                console.log(this.board);
             } else {
                 event.stopPropagation();
             }
