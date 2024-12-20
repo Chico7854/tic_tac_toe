@@ -51,4 +51,14 @@ export class Board {
             squareElement.style.backgroundColor = 'blue';
         }
     }
+
+    clearBoard() {
+        const squares = document.querySelectorAll('.square');
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                this.board[i][j] = 0;
+                squares[i*3 + j].style.backgroundColor = 'white';
+            }
+        }
+    }
 }
